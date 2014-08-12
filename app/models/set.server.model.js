@@ -9,7 +9,7 @@ var mongoose = require('mongoose'),
 /**
  * Article Schema
  */
-var SetSchema = new Schema({
+var CardSetSchema = new Schema({
 	name: {
 		type: String
 	},
@@ -34,6 +34,7 @@ var SetSchema = new Schema({
   cards: {
 		type: Array
 	}
-});
+},
+  {collection: 'mtgData'});
 
-mongoose.model('Set', SetSchema);
+mongoose.model('CardSet', CardSetSchema);

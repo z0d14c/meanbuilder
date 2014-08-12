@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('sets').controller('SetsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Sets',
-	function($scope, $stateParams, $location, Authentication, Sets) {
+angular.module('cardSets').controller('CardSetsController', ['$scope', '$stateParams', '$location', 'Authentication', 'CardSets',
+	function($scope, $stateParams, $location, Authentication, CardSets) {
 		$scope.authentication = Authentication;
 
 
@@ -49,7 +49,7 @@ angular.module('sets').controller('SetsController', ['$scope', '$stateParams', '
 //		};
 //
 		$scope.find = function() {
-			$scope.sets = Sets.query();
+			$scope.cardSets = CardSets.query();
 		};
 
 //		$scope.findOne = function() {

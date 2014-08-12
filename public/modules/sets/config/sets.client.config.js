@@ -1,11 +1,11 @@
 'use strict';
 
 // Configuring the Articles module
-angular.module('sets').run(['Menus',
+angular.module('cardSets').run(['Menus',
 	function(Menus) {
 		// Set top bar menu items
-		Menus.addMenuItem('topbar', 'Sets', 'sets', 'dropdown', '/sets(/create)?');
-		Menus.addSubMenuItem('topbar', 'sets', 'List Sets', 'sets');
-//		Menus.addSubMenuItem('topbar', 'sets', 'New Article', 'articles/create');
+		Menus.addMenuItem('topbar', 'CardSets', 'cardSets', 'dropdown', '/cardSets(/create)?');
+		Menus.addSubMenuItem('topbar', 'cardSets', 'List CardSets', 'cardSets');
+//		Menus.addSubMenuItem('topbar', 'cardSets', 'New Article', 'articles/create');
 	}
 ]);

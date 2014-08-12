@@ -4,16 +4,16 @@
  * Module dependencies.
  */
 var users = require('../../app/controllers/users'),
-	sets = require('../../app/controllers/sets');
+	cardSets = require('../../app/controllers/cardSets');
 
 module.exports = function(app) {
 	// Card Routes
-	app.route('/sets')
-		.get(cards.list);
+	app.route('/cardSets')
+		.get(cardSets.list);
 
-	app.route('/cards/:cardId')
-		.get(cards.read);
+	app.route('/cardSets/:cardSetId')
+		.get(cardSets.read);
 
 	// Finish by binding the Card middleware
-	app.param('SetId', cards.setById);
+	app.param('cardSetId', cardSets.setByID);
 };
