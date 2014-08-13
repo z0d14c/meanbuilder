@@ -7,7 +7,7 @@ angular.module('cardSets').config(['$stateProvider',
 		$stateProvider.
 		state('listCardSets', {
 			url: '/cardSets',
-			templateUrl: 'modules/cardSets/views/list-cardSets.client.view.html'
+			templateUrl: 'modules/sets/views/list-sets.client.view.html'
 		}).
 //		state('createArticle', {
 //			url: '/articles/create',
@@ -15,7 +15,7 @@ angular.module('cardSets').config(['$stateProvider',
 //		}).
 		state('viewCardSet', {
 			url: '/cardSets/:cardSetId',
-			templateUrl: 'modules/cardSets/views/view-cardSet.client.view.html'
+			templateUrl: 'modules/sets/views/view-cardSet.client.view.html'
 		});
 //		state('editArticle', {
 //			url: '/articles/:articleId/edit',
