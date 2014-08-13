@@ -1,9 +1,8 @@
 'use strict';
 
-angular.module('cardSets').controller('CardSetsController', ['$scope', '$stateParams', '$location', 'Authentication', 'CardSets',
+angular.module('cardSets').controller('DeckbuilderCtrl', ['$scope', '$stateParams', '$location', 'Authentication', 'CardSets',
 	function($scope, $stateParams, $location, Authentication, CardSets) {
 		$scope.authentication = Authentication;
-
 
 
 //
