@@ -3,7 +3,14 @@
 angular.module('cardSets').controller('DeckbuilderCtrl', ['$scope', '$stateParams', '$location', 'Authentication', 'CardSets',
 	function($scope, $stateParams, $location, Authentication, CardSets) {
 		$scope.authentication = Authentication;
-
+    $scope.formats = {
+      standard: 'Standard',
+      modern: 'Modern',
+      legacy: 'Standard',
+      vintage: 'Standard',
+      edh: 'French EDH',
+      casual: 'Casual or Freeform'
+    };
 
 //
 //		$scope.create = function() {
